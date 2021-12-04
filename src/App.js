@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import './App.css';
+import Navigation from './Navigation';
+import Action from './Action';
+import Adventure from './Adventure';
+import Horror from './Horror';
+import Mystery from './Mystery';
+import Romance from './Romance';
+import Search from './Search';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App() {	
+	return (
+		<div className="app-container">
+			<Navigation />
+			<div className="slider">	
+				<Search />
+				<Action />
+				<Adventure />
+				<Horror />
+				<Mystery />
+				<Romance />
+			</div>
+		</div>
+	);
 }
 
 export default App;
