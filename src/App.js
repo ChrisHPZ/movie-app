@@ -6,14 +6,13 @@ import Adventure from './Adventure';
 import Horror from './Horror';
 import Mystery from './Mystery';
 import Romance from './Romance';
-import Search from './Search';
+// import Search from './Search';
 
 function App() {	
 	return (
 		<div className="app-container">
 			<Navigation />
-			<div className="slider">	
-				<Search />
+			<div className="slider">				
 				<Action />
 				<Adventure />
 				<Horror />
